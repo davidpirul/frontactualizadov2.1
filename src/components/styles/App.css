@@ -446,3 +446,7 @@ h3.titulo-seguimiento {
     /* align-content: space-around; */
     justify-content: flex-start;
 }
+
+input[type="file"] {
+    width: 100%;
+}
