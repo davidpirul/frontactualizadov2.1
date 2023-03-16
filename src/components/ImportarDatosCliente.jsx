@@ -66,8 +66,8 @@ function ImportarDatosCliente() {
       <br />
 
       <p className="my-paragraph maincontainer">
-    <a href={externalLink} target="_blank" rel="noopener noreferrer">{externalLink}</a>
-  </p>
+        <a href={externalLink} target="_blank" rel="noopener noreferrer">{externalLink}</a>
+      </p>
     </div>
   );
 }

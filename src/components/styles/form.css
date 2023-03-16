@@ -3,9 +3,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
 
 .paint {
     position: absolute;
@@ -23,8 +21,6 @@
     object-fit: contain;
     transform: scale(1.7);
 }
-
-
 
 .splineContainer {
     width: 27em;
@@ -101,36 +97,14 @@
     background: #eee;
 }
 
-.shadow::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: calc(100% + 96px);
-    width: 120%;
-    height: 240%;
-    background: linear-gradient(rgba(0, 0, 0, .25), transparent);
-    transform: skewX(45deg);
-}
-
-.shadow::after {
-    content: '';
-    position: absolute;
-    bottom: -200%;
-    left: calc(100% + 80px);
-    width: 100%;
-    height: 200%;
-    background: linear-gradient(rgba(0, 0, 0, .075), transparent);
-    transform: skewX(45deg);
-
-}
-
-.formMain .inputBoxForm  {
+.formMain .inputBoxForm {
     width: 100%;
     position: relative;
     margin-top: 5%;
 }
 
-.inputBoxForm input, .formMain .submit {
+.inputBoxForm input,
+.formMain .submit {
     position: relative;
     width: 100%;
     padding: 10px 0 10px 25px;
@@ -142,7 +116,18 @@
     outline: none;
 }
 
+.contenedorFormulario {
+    margin: 3%;
+}
+@media (max-width: 450px) {
+    .splineContainer {
+        display: none;
+    }
+    .formContainer {
+        overflow: hidden;
+    }
 
+}
 
 
 
@@ -304,7 +289,8 @@
 
 
 
-.inputBoxForm, .textForm {
+.inputBoxForm,
+.textForm {
     padding-left: 2em;
 }
 
@@ -495,10 +481,10 @@
         font-size: 1.8em;
     }
 
-    
-.formMain .submit {
-    font-size: 1.2em;
-}
+
+    .formMain .submit {
+        font-size: 1.2em;
+    }
 }
 
 

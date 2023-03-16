@@ -34,18 +34,16 @@ const Filtrador = () => {
         <div></div>
         <div></div>
       </button>
-      <div className="filtradorLogo">
-        <NavLink to='/home'>
-          <img src={mainLogo} alt="freeCoders" />
-        </NavLink>
-      </div>
       <div className={filtradorDisplay ? "menuBusqueda busquedaResponsive" : "menuBusqueda"} >
         <div className="inputBoxSearch inputAreaName">
-          <input type="text" name='area' className='boxSearchInput'
+          <p className='filtroName areaFiltro'>Area</p>
+          <input type="text"
+            name='area'
+            className='boxSearchInput'
             onFocus={() => setArea(true)}
             onBlur={() => setTimeout(() => setArea(false), 220)}
           />
-          <p className='filtroName areaFiltro'>Area</p>
+
           <div className={displaying(area) ? 'hiddenBox filterCoderArea hidden' : 'hiddenBox filterCoderArea'}>
             <p onClick={filtradorArea} className='textoArea' data-value='front'>Front-End</p>
             <p onClick={filtradorArea} className='textoArea' data-value='back' >Back-End</p>
@@ -53,34 +51,33 @@ const Filtrador = () => {
           </div>
         </div>
         <div className="inputBoxSearch inputCoderName">
-          <input type="text" name='Coder' className='boxSearchInput'
+          <p className='filtroName nombreFiltro'>Nombre</p>
+          <input
+            type="text"
+            name='Coder'
+            className='boxSearchInput'
             onFocus={() => setCoder(true)}
             onBlur={() => setTimeout(() => setCoder(false), 220)}
           />
-          <p className='filtroName nombreFiltro'>Nombre</p>
           <div className={displaying(coder) ? 'hiddenBox filterCoderName hidden' : 'hiddenBox filterCoderName'}>
-            {freeCoders.map((coder, index) => 
-            <p className='codersName' key= {index} onClick={filtradorNombre}>{coder.nombre}</p>) }
+            {freeCoders.map((coder, index) =>
+              <p className='codersName' key={index} onClick={filtradorNombre}>{coder.nombre}</p>)}
           </div>
         </div>
         <div className="inputBoxSearch inputLanguageName">
-          <input type="text" name='Language' className='boxSearchInput'
+          <p className='filtroName lenguajeFiltro'>Lenguaje</p>
+          <input type="text"
+            name='Language'
+            className='boxSearchInput'
             onFocus={() => setLanguage(true)}
             onBlur={() => setTimeout(() => setLanguage(false), 220)}
           />
-          <p className='filtroName lenguajeFiltro'>Lenguaje</p>
           <div className={displaying(language) ? 'hiddenBox filterCoderLanguage hidden' : 'hiddenBox filterCoderLanguage'}>
-            <p data-value= 'java' onClick={filtradorLenguaje}>Java</p>
-            <p data-value= 'python' onClick={filtradorLenguaje}>Python</p>
-            <p data-value= 'javascript' onClick={filtradorLenguaje}>JavaScript</p>
+            <p data-value='java' onClick={filtradorLenguaje}>Java</p>
+            <p data-value='python' onClick={filtradorLenguaje}>Python</p>
+            <p data-value='javascript' onClick={filtradorLenguaje}>JavaScript</p>
           </div>
         </div>
-      </div>
-      <div className="volver">
-        <NavLink to='/contactarfreecoder'>
-            <AiOutlineMail className= 'volverIcon' />
-          <div className="volverButton">Contacto</div>
-        </NavLink>
       </div>
     </div>
   )

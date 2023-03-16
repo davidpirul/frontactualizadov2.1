@@ -1,5 +1,4 @@
 /* another one */
-
 input::placeholder,
 textarea::placeholder {
     font-family: 'Consolas';
@@ -148,7 +147,6 @@ form button[type="submit"]:hover {
     box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
     font-family: 'consolas';
     position: relative;
-    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     justify-content: space-around;

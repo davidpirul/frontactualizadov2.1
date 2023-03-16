@@ -14,19 +14,34 @@ const Nav = () => {
     <header className='navBarHeader'>
       <button onClick={hamburgerHandle}
         className={hamburgerDisplay ? 'hamburger cruz' : 'hamburger'}>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
       </button>
       <NavLink to='/home' className="navBarHeaderLogo">
         <img src={mainLogo} alt="logoFreecoders" />
       </NavLink>
       <nav className={hamburgerDisplay ? 'displayed' : 'nav'}>
         <ul>
+
           <NavLink to='/login' className={hamburgerDisplay ? 'liDisplayed' : 'li'} >Ingresar</NavLink>
           <NavLink to='/crearperfil' className={hamburgerDisplay ? 'liDisplayed' : 'li'} >Crear Perfil</NavLink>
           <NavLink to='/busqueda' className={hamburgerDisplay ? 'liDisplayed' : 'li'} >Buscar Coders</NavLink>
-          <div class="dropdown">
+
+          <NavLink to='/seguimiento' className={hamburgerDisplay ? 'liDisplayed' : 'li displaynone'}>Seguimiento</NavLink>
+              <NavLink to='/missolicitudes' className={hamburgerDisplay ? 'liDisplayed' : 'li displaynone'}>Mis solicitudes</NavLink>
+              <NavLink to='/contactarfreecoder' className={hamburgerDisplay ? 'liDisplayed' : 'li displaynone'}>Contactar Freecoder</NavLink>
+              <NavLink to='/perfilfreecoder' className={hamburgerDisplay ? 'liDisplayed' : 'li displaynone'}>Perfil Freecoder</NavLink>
+              <NavLink to='/crearpropuesta' className={hamburgerDisplay ? 'liDisplayed' : 'li displaynone'}>Crear Propuesta</NavLink>
+              <NavLink to='/abonarpropuesta' className={hamburgerDisplay ? 'liDisplayed' : 'li displaynone'}>Abonar Propuesta</NavLink>
+              <NavLink to='/confirmarorden' className={hamburgerDisplay ? 'liDisplayed' : 'li displaynone'}>Confirmar Orden</NavLink>
+              <NavLink to='/seguimiento' className={hamburgerDisplay ? 'liDisplayed' : 'li displaynone'}>Seguimiento</NavLink>
+              <NavLink to='/enviopropuesta' className={hamburgerDisplay ? 'liDisplayed' : 'li displaynone'}>Enviar Propuesta</NavLink>
+
+          <div className="dropdown">
             <button className="dropbtn">Menu</button>
             <div className="dropdown-content" >
               <NavLink to='/seguimiento' className={hamburgerDisplay ? 'liDisplayed' : 'li'}>Seguimiento</NavLink>
@@ -40,11 +55,8 @@ const Nav = () => {
               <NavLink to='/enviopropuesta' className={hamburgerDisplay ? 'liDisplayed' : 'li'}>Enviar Propuesta</NavLink>
             </div>
           </div>
-
-
         </ul>
       </nav>
-      <div></div>
     </header>
   )
 }
