@@ -1,20 +1,7 @@
 ## Integrantes Proyecto Freecoders:
 Alejandro Quiñones, Cristobal Díaz, David Pirul y Gustavo López
 
-### Leer antes de calificar
-El proyecto contiene funcionalidades de Frontend necesarias para recorrer las vistas.
-Los estilos están en desarrollo y mejora, aunque adecuados para revisión.
-La responsividad no ha sido depurada completamente. Esto se completará en el Deploy.
+### Leer antes
+versrion 2.2 actualizada el 15 de marzo a las 23:41
 
-### Sobre la fuente "Consolas"
-El frontend considera el uso de la fuente Consolas, la cual eventualmente podría no estar en la máquina donde se visualiza.
-De ser el caso, recomendamos instalarla descargándola desde este link: https://www.fontpalace.com/font-details/Consolas/
-
-### Imágenes de previsualización
-[Ver Home](home.png)
-
-[Ver Form](form.png)
-
-
-### Acceso a repositorio
-https://proyecto-freecoders-hito1-v2.netlify.app/
+https://6412815eabaa4e16f850c175--taupe-scone-d3d48b.netlify.app/
